@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "14178985691",
+    "firebase_url": "https://sisantri-4badc.firebaseio.com",
+    "project_id": "sisantri-4badc",
+    "storage_bucket": "sisantri-4badc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:14178985691:android:0fb9fed839418f05",
+        "android_client_info": {
+          "package_name": "com.example.sisantri"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "14178985691-93jc42trj5fb3trh7786t5gr2eni7sdd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8TEvDLWKiD_Wd3ghJyEPL6RTDWqz6Aas"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "14178985691-93jc42trj5fb3trh7786t5gr2eni7sdd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
