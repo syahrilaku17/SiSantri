@@ -44,13 +44,18 @@ class RegisterActivity : AppCompatActivity() {
         // firebase authentication to create a user with email and password
         FirebaseAuth.getInstance().createUserWithEmailAndPassword(email, password)
             .addOnCompleteListener {
-                val intent = Intent (this, LoginActivity::class.java)
+            if (!it.isSuccessful){ return@addOnCompleteListener
+                val intent = Intent(this, RegisterActivity::class.java)
                 startActivity(intent)
-                Toast.makeText(this, "Sukses membuat akun", Toast.LENGTH_SHORT).show()
-
+            }
+            else
+                Toast.makeText(this, "Berhasil Membuat Akun", Toast.LENGTH_SHORT).show()
+                val intent = Intent(this, LoginActivity::class.java)
+                startActivity(intent)
             }
             .addOnFailureListener {
                 Log.d("Register", "Gagal membuat akun: ${it.message}")
+                Toast.makeText(this, "Gagal Membuat Akun", Toast.LENGTH_SHORT).show()
             }
 
     }
