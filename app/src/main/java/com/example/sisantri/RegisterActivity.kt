@@ -44,10 +44,10 @@ class RegisterActivity : AppCompatActivity() {
         // firebase authentication to create a user with email and password
         FirebaseAuth.getInstance().createUserWithEmailAndPassword(email, password)
             .addOnCompleteListener {
-                if (!it.isSuccessful) return@addOnCompleteListener
+                val intent = Intent (this, LoginActivity::class.java)
+                startActivity(intent)
+                Toast.makeText(this, "Sukses membuat akun", Toast.LENGTH_SHORT).show()
 
-                //else if succesful
-                Log.d("Register", "Successfully created user with uid: ${it.result.user.uid}")
             }
             .addOnFailureListener {
                 Log.d("Register", "Gagal membuat akun: ${it.message}")
