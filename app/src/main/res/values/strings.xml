@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">SiSantri</string>
+    <string name="simpan"> Simpan </string>
+    <string name="batal"> Batal</string>
 </resources>

@@ -1,0 +1,98 @@
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context="com.syahrilirfani.sisantri.Fragment.PersonAddFragment">
+
+
+    <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/gradientbackground">
+
+        <Button
+                android:text="Button"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:id="@+id/btn_image_fragment_person_add" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+                app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+                android:layout_marginTop="24dp" app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginBottom="24dp" app:layout_constraintBottom_toTopOf="@+id/edit_text_nama_santri_fragment_person_add"/>
+        <EditText
+                android:textColor="#000000"
+                android:paddingLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/edit_text_nama_santri_fragment_person_add" android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@+id/btn_image_fragment_person_add" android:layout_marginStart="16dp"
+                app:layout_constraintStart_toStartOf="parent" android:layout_marginEnd="16dp"
+                app:layout_constraintEnd_toEndOf="parent" android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toTopOf="@+id/edit_text_kelas_fragment_person_add"
+                android:background="@android:color/background_light"
+                android:hint="nama santri"/>
+        <EditText
+                android:paddingLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/edit_text_kelas_fragment_person_add"
+                app:layout_constraintTop_toBottomOf="@+id/edit_text_nama_santri_fragment_person_add" android:layout_marginStart="16dp"
+                app:layout_constraintStart_toStartOf="parent" android:layout_marginEnd="16dp"
+                app:layout_constraintEnd_toEndOf="parent" android:background="@android:color/background_light"
+                android:layout_marginBottom="8dp" app:layout_constraintBottom_toTopOf="@+id/edit_text_alamat_fragment_person_add"
+                android:hint="kelas"/>
+        <EditText
+                android:paddingLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="textMultiLine"
+                android:gravity="start|top"
+                android:ems="10"
+                android:id="@+id/edit_text_alamat_fragment_person_add"
+                app:layout_constraintEnd_toEndOf="@+id/edit_text_kelas_fragment_person_add"
+                app:layout_constraintTop_toBottomOf="@+id/edit_text_kelas_fragment_person_add" android:layout_marginStart="16dp"
+                app:layout_constraintStart_toStartOf="@+id/edit_text_kelas_fragment_person_add" android:layout_marginEnd="16dp"
+                android:background="@android:color/background_light" android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toTopOf="@+id/edit_text_email_person_add" android:hint="alamat"/>
+        <EditText
+                android:paddingLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="textEmailAddress"
+                android:ems="10"
+                android:id="@+id/edit_text_email_person_add"
+                app:layout_constraintEnd_toEndOf="@+id/edit_text_alamat_fragment_person_add"
+                app:layout_constraintStart_toStartOf="@+id/edit_text_alamat_fragment_person_add"
+                app:layout_constraintTop_toBottomOf="@+id/edit_text_alamat_fragment_person_add" android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp" android:background="@android:color/background_light"
+                android:layout_marginBottom="8dp" app:layout_constraintBottom_toTopOf="@+id/edit_text_wali__person_add"
+                app:layout_constraintHorizontal_bias="0.0" android:hint="e-mail"/>
+        <EditText
+                android:paddingLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/edit_text_wali__person_add"
+                app:layout_constraintEnd_toEndOf="@+id/edit_text_email_person_add" app:layout_constraintTop_toBottomOf="@+id/edit_text_email_person_add"
+                app:layout_constraintStart_toStartOf="@+id/edit_text_email_person_add" android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp" android:background="@android:color/background_light"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toTopOf="@+id/btn_simpan_person_add" android:hint="wali"/>
+        <Button
+                android:textColor="#FFF"
+                android:background="@drawable/buttonstyle"
+                android:text="@string/simpan"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/btn_simpan_person_add" app:layout_constraintEnd_toEndOf="@+id/edit_text_wali__person_add"
+                app:layout_constraintStart_toStartOf="@+id/edit_text_wali__person_add" android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/edit_text_wali__person_add"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="24dp" android:layout_marginStart="16dp" android:layout_marginEnd="16dp"/>
+    </android.support.constraint.ConstraintLayout>
+</FrameLayout>

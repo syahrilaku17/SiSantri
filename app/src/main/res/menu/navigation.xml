@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+            android:id="@+id/navigation_search"
+            android:icon="@drawable/baseline_search_black_18dp"
+            android:title="Search" />
+
+    <item
+            android:id="@+id/navigation_location"
+            android:icon="@drawable/baseline_room_black_18dp"
+            android:title="Maps" />
+
+    <item
+            android:id="@+id/navigation_home"
+            android:icon="@drawable/baseline_home_black_18dp"
+            android:title="Home" />
+
+    <item
+            android:id="@+id/navigation_person_add"
+            android:icon="@drawable/baseline_person_add_black_18dp"
+            android:title="Person Add" />
+    <item
+            android:id="@+id/navigation_person"
+            android:icon="@drawable/baseline_person_black_18dp"
+            android:title="Person" />
+
+</menu>
