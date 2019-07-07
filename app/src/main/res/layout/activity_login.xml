@@ -39,6 +39,7 @@
                 android:layout_height="wrap_content"
                 android:hint="Type your email in here"
                 android:textColorHint="#fff"
+                android:layout_marginBottom="20dp"
                 android:inputType="textEmailAddress"
         />
         <EditText
@@ -62,6 +63,7 @@
                 android:id="@+id/back_to_register"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
                 android:text="Klik Disini Untuk Register"
                 android:textColor="#000"
         />
@@ -71,9 +73,10 @@
                 android:layout_height="wrap_content"
                 android:text="Anda juga bisa login dengan"
                 android:textColor="#fff"
-                android:layout_marginTop="50dp"
+                android:layout_marginTop="30dp"
         />
         <ImageView
+                android:id="@+id/googlebutton"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:background="@drawable/google"

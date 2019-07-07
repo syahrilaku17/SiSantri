@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "14178985691-233hb9630ib7l7kbrefpfcaovrp9qt65.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.sisantri",
+            "certificate_hash": "88848ce869fd41fc3bfabf86ad0c4a94623ac66c"
+          }
+        },
+        {
           "client_id": "14178985691-93jc42trj5fb3trh7786t5gr2eni7sdd.apps.googleusercontent.com",
           "client_type": 3
         }
